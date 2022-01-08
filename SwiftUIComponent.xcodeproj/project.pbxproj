@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4889548927895C2600A27D8D /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889548827895C2600A27D8D /* LongPressGestureView.swift */; };
 		48C16865277EB53700373EAF /* SwiftUIComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C16864277EB53700373EAF /* SwiftUIComponentApp.swift */; };
 		48C16867277EB53700373EAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C16866277EB53700373EAF /* ContentView.swift */; };
 		48C16869277EB53900373EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C16868277EB53900373EAF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4889548827895C2600A27D8D /* LongPressGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
 		48C16861277EB53700373EAF /* SwiftUIComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C16864277EB53700373EAF /* SwiftUIComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponentApp.swift; sourceTree = "<group>"; };
 		48C16866277EB53700373EAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				48C16864277EB53700373EAF /* SwiftUIComponentApp.swift */,
 				48C16866277EB53700373EAF /* ContentView.swift */,
+				4889548827895C2600A27D8D /* LongPressGestureView.swift */,
 				48C16868277EB53900373EAF /* Assets.xcassets */,
 				48C1686A277EB53900373EAF /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48C16867277EB53700373EAF /* ContentView.swift in Sources */,
+				4889548927895C2600A27D8D /* LongPressGestureView.swift in Sources */,
 				48C16865277EB53700373EAF /* SwiftUIComponentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
