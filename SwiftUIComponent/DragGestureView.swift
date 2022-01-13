@@ -8,6 +8,35 @@
 import SwiftUI
 
 struct DragGestureView: View {
+    
+    @State private var startingOffsetY: CGFloat = UIScreen.main.bounds.size.height * 0.85
+    @State private var currentOffsetY: CGFloat = 0.0
+    @State private var endingOffsetY: CGFloat = 0.0
+    
+    var dragGesture: some Gesture {
+        DragGesture()
+            .onChanged { value in
+                withAnimation(.spring()) {
+                    currentOffsetY = value.translation.height
+                }
+            }
+            .onEnded { value in
+                
+                withAnimation(.spring()) {
+                    if currentOffsetY < -150 {
+                        endingOffsetY = -startingOffsetY
+                    } else if endingOffsetY != 0 && currentOffsetY > 150 {
+                        endingOffsetY = 0
+                    }
+                    
+                    currentOffsetY = 0
+                    
+                }
+                
+            }
+        
+    }
+    
     var body: some View {
         
         ZStack {
@@ -15,6 +44,9 @@ struct DragGestureView: View {
                 .ignoresSafeArea()
             
             MySignUpView()
+                .offset(y: startingOffsetY + currentOffsetY + endingOffsetY)
+                .gesture(dragGesture)
+            
         }
         .ignoresSafeArea(edges: .bottom)
     }
@@ -28,9 +60,9 @@ struct DragGestureView_Previews: PreviewProvider {
 
 struct MySignUpView: View {
     var body: some View {
-        VStack(spacing: 24.0) {
+        VStack(spacing: 20.0) {
             Image(systemName: "chevron.up")
-                .font(.largeTitle)
+                .font(.headline)
                 .padding(.top)
             
             Text("Sign Up")
