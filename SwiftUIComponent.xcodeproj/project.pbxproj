@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48744AF62790067500227872 /* SimpleDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48744AF52790067500227872 /* SimpleDragGesture.swift */; };
+		48744AFA279046F700227872 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48744AF9279046F700227872 /* DragGestureView.swift */; };
 		48C16865277EB53700373EAF /* SwiftUIComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C16864277EB53700373EAF /* SwiftUIComponentApp.swift */; };
 		48C16867277EB53700373EAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C16866277EB53700373EAF /* ContentView.swift */; };
 		48C16869277EB53900373EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C16868277EB53900373EAF /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		48744AF52790067500227872 /* SimpleDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDragGesture.swift; sourceTree = "<group>"; };
+		48744AF9279046F700227872 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		48C16861277EB53700373EAF /* SwiftUIComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C16864277EB53700373EAF /* SwiftUIComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponentApp.swift; sourceTree = "<group>"; };
 		48C16866277EB53700373EAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				48C16864277EB53700373EAF /* SwiftUIComponentApp.swift */,
 				48C16866277EB53700373EAF /* ContentView.swift */,
 				48744AF52790067500227872 /* SimpleDragGesture.swift */,
+				48744AF9279046F700227872 /* DragGestureView.swift */,
 				48C16868277EB53900373EAF /* Assets.xcassets */,
 				48C1686A277EB53900373EAF /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48744AFA279046F700227872 /* DragGestureView.swift in Sources */,
 				48C16867277EB53700373EAF /* ContentView.swift in Sources */,
 				48C16865277EB53700373EAF /* SwiftUIComponentApp.swift in Sources */,
 				48744AF62790067500227872 /* SimpleDragGesture.swift in Sources */,
