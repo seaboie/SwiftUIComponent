@@ -8,11 +8,43 @@
 
 import SwiftUI
 
+struct RandomModel: Identifiable {
+    
+    let id = UUID().uuidString
+    let title: String
+}
+
 struct ContentView: View {
+    
+    @State private var selectedModel: RandomModel? = nil
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ScrollView {
+            ForEach(0..<50) { index in
+                Button("Button \(index)") {
+                    selectedModel = RandomModel(title: "\(index)")
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .center)
+            }
+        }
+        .sheet(item: $selectedModel, onDismiss: nil) { identifiable in
+            NextScreen(selectedModel: identifiable)
+        }
+        
     }
+}
+
+struct NextScreen: View {
+    
+    let selectedModel: RandomModel
+    
+    var body: some View {
+        Text(selectedModel.title)
+            .font(.largeTitle)
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
